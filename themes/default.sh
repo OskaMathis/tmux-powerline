@@ -44,9 +44,9 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		# "macos_notification_count 29 255" \
 		# "mailcount 9 255" \
 		# "now_playing 234 37" \
-		"cpu 2 0" \
+		# "cpu 2 0" \
 		# "load 237 255" \
-		# "tmux_mem_cpu_load 234 255" \
+		"tmux_mem_cpu_load 2 0" \
 		# "battery 137 127" \
 		# "weather 37 255" \
 		# "rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
