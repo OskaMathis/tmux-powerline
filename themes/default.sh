@@ -24,11 +24,12 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
 		"tmux_session_info 238 255" \
+		"datetime 4 255" \
+		"lan_ip 3 0" \
+		"wan_ip 3 0" \
 		# "hostname 33 0" \
 		# "ifstat 30 255" \
 		# "ifstat_sys 30 255" \
-		"lan_ip 12 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
-		"wan_ip 12 255" \
 		# "vcs_branch 29 255" \
 		# "vcs_compare 60 255" \
 		# "vcs_staged 64 255" \
@@ -39,6 +40,7 @@ fi
 
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
+		"tmux_mem_cpu_load 2 0" \
 		# "earthquake 3 0" \
 		# "pwd 89 255" \
 		# "macos_notification_count 29 255" \
@@ -46,12 +48,10 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		# "now_playing 234 37" \
 		# "cpu 2 0" \
 		# "load 237 255" \
-		"tmux_mem_cpu_load 2 0" \
 		# "battery 137 127" \
 		# "weather 37 255" \
 		# "rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
 		# "xkb_layout 125 117" \
-		"datetime 238 255" \
 		# "date 238 255" \
 		# "date_day 238 255" \
 		# "time 238 255" \
