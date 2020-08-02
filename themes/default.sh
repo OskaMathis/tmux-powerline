@@ -23,8 +23,8 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-		"tmux_session_info 238 255" \
-		"datetime 4 255" \
+		"tmux_session_info 7 0" \
+		"datetime 4 254" \
 		"lan_ip 3 0" \
 		"wan_ip 3 0" \
 		# "hostname 33 0" \
