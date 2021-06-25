@@ -25,8 +25,6 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
 		"tmux_session_info 7 0" \
 		"datetime 4 254" \
-		"lan_ip 3 0" \
-		"wan_ip 3 0" \
 		# "hostname 33 0" \
 		# "ifstat 30 255" \
 		# "ifstat_sys 30 255" \
@@ -40,7 +38,9 @@ fi
 
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
-		"tmux_mem_cpu_load 2 0" \
+		"lan_ip 3 0" \
+		"wan_ip 3 0" \
+		# "tmux_mem_cpu_load 2 0" \
 		# "earthquake 3 0" \
 		# "pwd 89 255" \
 		# "macos_notification_count 29 255" \
